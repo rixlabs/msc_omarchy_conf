@@ -1,5 +1,7 @@
 # Omarchy adventure
 
+The seed of this idea was X. I kept seeing people posting about Omarchy and how nice it is and since I always found DHH to be an inspired and inspiring person I wanted to try to play with linux again after at least 15 year of absemce from the scene
+
 I had an old MacBook Pro in a corner of a closet since 4 years. It is my old old work laptop that I bought back from my past employer. The model is a 2017 15 inch. The one with the stupid touch pad and no ESC key. 
 
 ## First install
