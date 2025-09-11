@@ -1,0 +1,12 @@
+[Unit]
+Description=Fix power leve for Broadcom amc wifi wlan0
+Requires=sys-kernel-debug.mount
+After=sys-kernel-debug.mount
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/src/mac-wifi/fix_wifi_power.sh
+User=root
+
+[Install]
+WantedBy=multi-user.target suspend.target
