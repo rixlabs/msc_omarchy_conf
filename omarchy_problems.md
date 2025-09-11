@@ -48,3 +48,15 @@ Instead of using the monitor name use ```desc:<monitor descrition>```
 
 #### Suspend and don't come back
 
+
+
+
+#### Useful links
+The guide with all the life saving GPU magic links
+[ArchLinux Setup Guide For Intel MacBook Pro](https://dev.to/x1unix/archlinux-setup-guide-for-intel-macbook-pro-58b8#turn-off-discrete-amd-gpu)
+
+Arch linux WIki with mac problems
+[Mac/Troubleshooting](https://wiki.archlinux.org/title/Mac/Troubleshooting)
+[]()
+
+
