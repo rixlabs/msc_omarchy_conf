@@ -50,6 +50,28 @@ Instead of using the monitor name use ```desc:<monitor descrition>```
 
 
 
+#### Video glitch
+~ ❯ sudo cat /sys/kernel/debug/vgaswitcheroo/switch
+
+0:DIS:+:Pwr:0000:01:00.0
+1:DIS-Audio: :DynOff:0000:01:00.1
+2:IGD: :Off:0000:00:02.0
+
+To manipulate the two cards: the DIS and IGD you can use the vgaswitcheroo
+
+# set to integrated
+
+
+sudo sh -c 'echo IGD > /sys/kernel/debug/vgaswitcheroo/switch'
+
+# turn off dGPU
+sudo sh -c 'echo OFF > /sys/kernel/debug/vgaswitcheroo/switch'
+
+# print mux state.
+# ensure that "DIS" is "OFF" and "DIS-Audio" is "DynOff"
+sudo cat /sys/kernel/debug/vgaswitcheroo/switch
+
+
 
 #### Useful links
 The guide with all the life saving GPU magic links
