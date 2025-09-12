@@ -36,7 +36,7 @@ For the wifi I searched the shit out of the planet until I found this link [Txpo
 #### Mouse
 My MX Master 3s was easy to connect but I had immediately a lateny problem. The movement was choppy an not at all smooth.
 
-Agter some digging I found this config ```no_harware_cursor = true``` to be added to the cursor config. More infos here: [Mouse is laggy/choppy]
+After some digging I found this config ```no_harware_cursor = true``` to be added to the cursor config. More infos here: [Mouse is laggy/choppy]
 (https://www.reddit.com/r/hyprland/comments/1fzeqf5/mouse_is_laggychoppy/)
 
 #### Audio
@@ -59,16 +59,16 @@ Instead of using the monitor name use ```desc:<monitor descrition>```
 
 To manipulate the two cards: the DIS and IGD you can use the vgaswitcheroo
 
-# set to integrated
+* set to integrated *
 
 
 sudo sh -c 'echo IGD > /sys/kernel/debug/vgaswitcheroo/switch'
 
-# turn off dGPU
+* turn off dGPU *
 sudo sh -c 'echo OFF > /sys/kernel/debug/vgaswitcheroo/switch'
 
-# print mux state.
-# ensure that "DIS" is "OFF" and "DIS-Audio" is "DynOff"
+* print mux state. *
+* ensure that "DIS" is "OFF" and "DIS-Audio" is "DynOff" *
 sudo cat /sys/kernel/debug/vgaswitcheroo/switch
 
 
